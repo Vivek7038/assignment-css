@@ -27,9 +27,9 @@ const Main = () => {
       </div>
       <div className="socials">
         {/* Add some content or data for your socials here */}
-        <p>Random social content</p>
-        <div>hello</div>
-        <div>hello</div>
+        <p> Brands names section</p>
+        <div></div>
+        <div></div>
       </div>
     </div>
   );
