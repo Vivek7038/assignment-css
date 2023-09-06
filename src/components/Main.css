@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center contents horizontally */
+  min-height: 60vh; /* Set min-height to ensure enough space for socials */
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Expand to fill available space */
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first_main {
+  background-color: pink;
+  width: 40%;
+}
+
+.second_main {
+  background-color: rgb(70, 4, 15);
+  width: 60%; /* Adjust width to total 100% */
+}
+
+.vertical {
+  border-left: 2px solid rgb(42, 0, 0);
+  height: 100%;
+  position: relative; /* Change to relative */
+  left: 7%;
+}
+ .inner_main{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-top: 10px;
+ }
+
+.inner_main button{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.first_main {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.lorem{
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 20px;
+  gap: 12;
+  font-size: 18px;
+}
+.image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 45px;
+}
+.image-container img {
+  
+    max-width: 50%;
+    height: auto; /* This maintains the image's aspect ratio */
+  
+}
+.socials {
+  background-color: green;
+  height: 20vh; /* Set the desired height for the socials section */
+  width: 100%; /* Occupy the full width */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}

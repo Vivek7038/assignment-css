@@ -1,0 +1,255 @@
+.nav-container {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 23px;
+
+  padding-top: 0;
+  justify-content: space-between;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 5px;
+}
+ul {
+  list-style: none;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 5px;
+}
+
+.underline-div {
+  position: relative;
+}
+
+.underline-div::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  height: 2px; /* Adjust the height of the underline as needed */
+  width: 160%;
+  background-color: black; /* Adjust the color of the underline as needed */
+}
+@media screen and (max-width: 768px) {
+  .nav ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 10px; /* Adjust the gap for smaller screens */
+  }
+
+  /* Add any additional styles you need for smaller screens */
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+.brand img {
+  height: 1.425rem;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(40deg);
+  gap: 1px;
+  margin: 0;
+}
+.circle {
+  width: 10px; /* Adjust the size of the circle as needed */
+  height: 10px; /* It's set to 10px for a small circle */
+  background-color: black; /* Set the color to black */
+  border-radius: 50%; /* Make it a circle */
+  margin-left: -10px;
+  margin-right: 5px; /* Adjust the distance between the logo and the circle */
+  /* You can add more styles as needed */
+}
+
+.underline-second-div {
+  position: relative;
+}
+
+.underline-second-div::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  height: 2px; /* Adjust the height of the underline as needed */
+  width: 300%;
+  background-color: black; /* Adjust the color of the underline as needed */
+}
+.underline-second-div::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: -100px; /* Adjust the left distance to expand to the left */
+  width: calc(200% + 50px); /* Adjust the width for leftward expansion */
+  height: 2px; /* Adjust the height of the underline as needed */
+  background-color: black; /* Adjust the color of the underline as needed */
+}
+.underline-second-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 5%;
+  position: absolute;
+  left: 33.33%;
+  margin-left: -3px;
+  top: 0;
+}
+.vl2 {
+  border-left: 2px solid black;
+  height: 5%;
+  position: absolute;
+  left: 67%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.underline-last-div {
+  position: relative;
+}
+
+.underline-last-div::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  height: 2px; /* Adjust the height of the underline as needed */
+  width: 200%;
+  background-color: black; /* Adjust the color of the underline as needed */
+  overflow: hidden;
+  padding-left: 3%;
+}
+.underline-last-div::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: -100px; /* Adjust the left distance to expand to the left */
+  width: calc(100% + 50px); /* Adjust the width for leftward expansion */
+  height: 2px; /* Adjust the height of the underline as needed */
+  background-color: black; /* Adjust the color of the underline as needed */
+}
+ul li {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/*  styles  for hero section */
+/* Style the container */
+.hero-section {
+  margin-top: 2%;
+  display: flex;
+  position: relative;
+  height:30vh;
+}
+
+/* Style the first div */
+.first {
+  flex: 67%;
+  position: absolute;
+  left: 10px; /* Added "px" unit to the left property */
+  font-weight: bold;
+  font-size: 44px;
+  margin-left: 5px;
+}
+.first-child {
+  width: 90%;
+}
+/* Style the second div */
+.second {
+  flex: 23%;
+  position: relative;
+  left: 67%;
+  top: -20px; /* Move everything up by 20px */
+}
+
+/* Style the rectangle */
+.rectangle {
+  position: absolute;
+  background-color: black;
+  top: 15px;
+  height: 200px;
+  width: 400px;
+  left: 52px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 4%;
+}
+
+.circle_second {
+  width: 60px; /* Adjust the size of the circle as needed */
+  height: 60px; /* It's set to 10px for a small circle */
+  background-color:#85CF83; /* Set the color to black */
+  border-radius: 50%; /* Make it a circle */
+  position: absolute;
+  top: 34%;
+  left: 9%;
+  /* Adjust the distance between the logo and the circle */
+  /* You can add more styles as needed */
+}
+.logo_second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.logo_second img {
+  height: 22px;
+  width: 22px;
+  background-color: none;
+  position: absolute;
+  left: 13%;
+  z-index: 1000;
+  transform: rotate(40deg);
+}
+.dot {
+  width: 10px; /* Adjust the size of the circle as needed */
+  height: 10px; /* It's set to 10px for a small circle */
+  background-color: black; /* Set the color to black */
+  border-radius: 50%;
+  position: absolute;
+  left: 16%;
+  z-index: 1000;
+}
+.sunray {
+  width: 120px;
+  height: 6.5px;
+  position: absolute;
+  background-color: #bb9977;
+  left: 23.5%;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.oval {
+  flex-direction: row;
+  position: absolute;
+  right: -406%;
+  z-index: 1000;
+  width: 100px;
+  height: 170px;
+  background-color: #ccc;
+  border-radius: 50%/100%;
+  top: -80%;
+}
+.oval img{
+  position: relative;
+  left: 5%;
+}
+
