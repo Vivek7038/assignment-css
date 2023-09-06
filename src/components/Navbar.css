@@ -1,5 +1,65 @@
-.nav{
+.nav {
   padding: 0;
   margin: 0;
   height: 15vh;
+}
+.horizontal-line {
+  width: 100%;
+  border-top: 1px solid #000; /* You can adjust the color and style as needed */
+  margin-top: 1px; /* Adjust the margin as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  position: relative;
+  top: 30px;
+}
+.selected{
+  background-color: #000000; /* Background color for the selected button */
+  color: #fff; /* Text color for the selected button */
+  border: 2px solid black; /* Border color for the selected button */
+  border-radius: 12px ; /* Border radius for rounded corners */
+  font-size: 16px; /* Font size for the text */
+  padding: 3px 20px; /* Padding for top/bottom and left/right */
+  cursor: pointer;
+}
+.nav-items{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap:10px;
+  position: relative;
+  margin-top: 12px;
+}
+.nav-one{
+  position: absolute;
+  left: 12px;
+  display: flex;
+justify-content: center;
+flex-direction: row;
+padding-top: 10px;
+padding-bottom: 0;
+gap: 51px;
+}
+.nav-two{
+  display: flex;
+justify-content: center;
+flex-direction: row;
+padding-top: 10px;
+padding-bottom: 0;
+padding-left: 0;
+gap: 15px;
+position: absolute;
+left: 50%;
+}
+.nav-three{
+position: absolute;
+right: 5%;
+
+  display: flex;
+justify-content: center;
+flex-direction: row;
+padding-top: 10px;
+padding-bottom: 0;
+gap: 15px;
+
 }
