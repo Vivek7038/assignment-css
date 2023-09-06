@@ -16,12 +16,12 @@
 }
 
 .first_main {
-  background-color: pink;
+  /* background-color: pink; */
   width: 40%;
 }
 
 .second_main {
-  background-color: rgb(70, 4, 15);
+  /* background-color: rgb(70, 4, 15); */
   width: 60%; /* Adjust width to total 100% */
 }
 
